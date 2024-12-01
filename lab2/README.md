@@ -24,8 +24,8 @@ ADD ./index.html /usr/share/nginx/html/
 ```bash
 FROM nginx:1.27.3-alpine
 
-ADD ./apple.mikulitskii /etc/nginx/conf.d/
-ADD ./index.html /usr/share/nginx/html/
+COPY ./apple.mikulitskii /etc/nginx/conf.d/
+COPY ./index.html /usr/share/nginx/html/
 ``` 
 
 
